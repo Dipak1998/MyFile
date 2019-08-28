@@ -1,0 +1,122 @@
+<html>
+    <head>
+
+    </head>
+    <style>
+        /* div.detail{
+            display: flex;
+            }
+        div.detail div *{
+                flex: 1;
+            }
+        div.detail div.image1{
+            height: auto;
+            width: auto;
+        }
+        div.detail div.image2{
+            height: auto;
+            width: auto;
+        } */
+
+        div.detail div.Text marquee h1{
+            color: blue;
+        }
+        div.detail div.Text marquee h2{
+            color: red;
+        }
+        div.detail div.Text marquee h3{
+            color: rgb(235, 83, 202);
+        }
+        div.detail div p{
+            text-align: center;
+            color:red;
+        }
+        /* div.image1 img{
+            width: 100%;
+        } */
+        /* audio{
+            width: 0;
+        } */
+
+        @media screen and (min-width: 400px) {
+            body {
+                background-image: url("download1.jpg");
+                background-repeat: no-repeat;
+                background-size: 168% 168%;
+                }
+                div.detail div>p{
+                 text-align:center;
+                 color:red;
+                 }
+            
+                 div.shyari{
+                     /* text-align: center; */
+                     font-size: 40px;
+                     /* position: fixed;
+                     bottom:280px;
+                     right: 40px;
+                     left:10px;
+                     top:420px; */
+                     
+                     
+                 }
+                 div.From h1{
+                     color:blue;
+                     float: right;
+                 }
+                 div.image1 img{
+                     width: 100%;
+                 }
+        }
+    </style>
+    <body>
+                <!-- <bgsound src="song.mp3"></bgsound> -->
+                <audio id="song" controls autoplay loop>
+
+                <source src="song.mp3" autoplay="true" type="audio/mpeg">
+                    
+                  </audio>
+                  <!-- <embed src="song.mp3" autostart=true AutoPlay="true" loop="true" hidden="true" preload="true"> -->
+                <!-- <embed src="song.mp3" type="audio/mpeg" loop="true" hidden="true" autostart="true"> -->
+
+                    <div class="detail">
+                        <div class="Text">
+                                <marquee behavior="alternate"><b>
+                                        <h1>Happy BirthDay Maa</h1>
+                                        </b></marquee>
+                                        <marquee behavior="alternate" direction="right">
+                                        <b><h2>Love You And Miss You</h2></b>
+                                        </marquee>
+                        </div>
+                        <div class="shyari">
+                           <p>
+                            मेरे लिए एक फरिश्ता हो तुम,
+                          
+                            </p>
+                            <p>
+                                    ऊपरवाले का एक तोहफा तुम।
+                            </p>
+                            <p>
+                                    जब तुम साथ होती हो तो हर गम दूर रहता है। 
+                            </p>
+                            <p>
+                                    दुआ है इस जन्मदिन पर सारे जहाँ की 
+                            </p>
+                            <p>
+                                    खुशियां तुम्हारे दामन में भर जाएं।
+                            </p>
+                            <p>
+                                ********** हैप्पी बर्थ डे मॉम  **********
+                            </p>
+                        </div>                       
+                        <div class="image1"><img src="img.jpeg"></div>
+                        <div class="From"><h1>From Dipak</h1></div>
+                    </div>
+
+        <script>
+            var audio = document.getElementById('song');
+            console.log(audio);
+            audio.play().catch((e)=>console.error(e));
+        </script>
+    </body>
+</html>
